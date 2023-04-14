@@ -1,0 +1,49 @@
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --primary-color: green;
+    --secondary-color: yellow;
+}
+
+html {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+svg {
+    stroke: var(--primary-color);
+    fill: var(--primary-color);
+}
+
+line {
+    stroke-width: 3;
+}
+
+.secondary svg {
+    stroke: var(--secondary-color);
+    fill: var(--secondary-color);
+}
+
+.element {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 600px) {
+    .element { grid-template-columns: repeat(2, 1fr); }
+}
+
+.diagram {
+    display: grid;
+}
+
+@media (min-width: 600px) {
+    .diagram { place-items: center; }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: black;
+    --text-color: white;
+  }
+}
