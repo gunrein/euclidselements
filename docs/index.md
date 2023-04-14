@@ -1,6 +1,6 @@
 # Euclid's Elements
 
-There are many editions of [Euclid's *Elements*](https://en.wikipedia.org/wiki/Euclid%27s_Elements). This edition utilizes the 1908 translation by Sir Thomas L. Heath for the text. The diagrams and animations are representations of the definitions and postulates similar in spirit to Byrn's diagramatic visualizations implemented using the interactive medium of the web.
+There are many editions of [Euclid's _Elements_](https://en.wikipedia.org/wiki/Euclid%27s_Elements). This edition utilizes the 1908 translation by Sir Thomas L. Heath for the text. The diagrams and animations are representations of the definitions and postulates similar in spirit to Byrn's diagramatic visualizations implemented using the interactive medium of the web.
 
 ## Editions
 
