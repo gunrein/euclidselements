@@ -12,7 +12,10 @@ html {
 
 svg {
     stroke: var(--primary-color);
+    stroke-linecap: round;
     fill: var(--primary-color);
+    width: 20px;
+    height: 20px;
 }
 
 line {

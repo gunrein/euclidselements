@@ -12,317 +12,308 @@
     <h1 id="volume_title">Euclid's <i>Elements</i></h1>
     <h2 id="book_1_title">Book I</h2>
     <section>
+      <!-- Group the definitions of the diagram elements into one section. -->
+      <svg version="1.1" style="display: none;" width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <g id="todo">
+            <text y="100%" style="font-size: 8px;">To Do</text>
+          </g>
+          <g id="point">
+            <circle r="5px" />
+          </g>
+          <g id="line">
+            <line x2="100%" y2="100%" />
+          </g>
+          <g id="surface">
+            <rect width="100%" height="100%" />
+          </g>
+          <g id="rectilineal_plane_angle">
+            <line x1="10%" y1="90%" x2="100%" y2="90%" />
+            <line x1="10%" y1="90%" x2="100%" y2="10%" />
+          </g>
+        </defs>
+      </svg>
+
+
       <h3 id="book_1_definitions">Definitions</h3>
 
       <section class="element" id="book_1_def_1">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="10" cy="10" r="5" />
+          <svg>
+            <use href="#point" x="50%" y="50%" />
           </svg>
         </div>
 
         <div class="text">
-          A <strong>point</strong> is that which has no part.
+          1. A <strong>point</strong> is that which has no part.
         </div>
       </section>
 
       <section class="element" id="book_1_def_2">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-            <line x1="0" y1="0" x2="15" y2="15" />
+          <svg>
+            <use href="#line" />
           </svg>
         </div>
 
         <div class="text">
-          A <strong>line</strong> is a breadthless length.
-        </div>  
+          2. A <strong>line</strong> is a breadthless length.
+        </div>
       </section>
 
       <section class="element" id="book_1_def_3">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-
-            <circle cx="4" cy="4" r="4" />
-            <circle cx="15" cy="15" r="4" />
-            <line x1="4" y1="4" x2="15" y2="15" />
-          </svg>
+          <!-- intentionally empty -->
         </div>
         <div class="text">
-          The extremeties of a line are points.
-        </div>  
+          3. The extremeties of a line are points.
+        </div>
       </section>
 
       <section class="element" id="book_1_def_4">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-  
-            <circle cx="4" cy="4" r="4" />
-            <circle cx="15" cy="15" r="4" />
-            <line x1="4" y1="4" x2="15" y2="15" />
-          </svg>
+          <!-- intentionally empty -->
         </div>
 
-        <div class="text">A <strong>straight line</strong> is a line which lies evenly with
-        the points on itself.
+        <div class="text">
+          4. A <strong>straight line</strong> is a line which lies evenly with
+          the points on itself.
         </div>
       </section>
 
       <section class="element" id="book_1_def_5">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-  
-            <rect width="20" height="20" />
+          <svg>
+            <use href="#surface" />
           </svg>
         </div>
 
-        <div class="text">A <strong>surface</strong> is that which has length and breadth
-        only.</div>
+        <div class="text">
+          5. A <strong>surface</strong> is that which has length and breadth only.
+        </div>
       </section>
 
       <section class="element" id="book_1_def_6">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-  
-            <rect width="20" height="20" />
-
-            <line class="secondary" x1="0" y1="0" x2="0" y2="20" />
-            <line class="secondary" x1="0" y1="0" x2="20" y2="0" />
-            <line class="secondary" x1="20" y1="20" x2="0" y2="20" />
-            <line class="secondary" x1="20" y1="20" x2="20" y2="0" />
-          </svg>
+          <!-- intentionally empty -->
         </div>
 
-        <div class="text">The extremeties of a surface are lines.</div>
-        </section>
+        <div class="text">6. The extremeties of a surface are lines.</div>
+      </section>
 
       <section class="element" id="book_1_def_7">
         <div class="diagram">
-
+          <!-- intentionally empty -->          
         </div>
-        <div class="text">A <strong>plane surface</strong> is a surface which lies evenly with
-          the straight lines on itself.</div>
+        <div class="text">
+          7. A <strong>plane surface</strong> is a surface which lies evenly with
+          the straight lines on itself.
+        </div>
       </section>
 
       <section class="element" id="book_1_def_8">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-            <line x1="3" y1="3" x2="15" y2="15" />
-            <line x1="3" y1="3" x2="15" y2="3" />
-          </svg>
+          <!-- intentionally empty -->
         </div>
-        
+
         <div class="text">
-        A <strong>plane angle</strong> is the inclination to one another of
-        two lines in a plane which meet one another and do not lie in a
-        straight line.
-      </div>
+          8. A <strong>plane angle</strong> is the inclination to one another of
+          two lines in a plane which meet one another and do not lie in a
+          straight line.
+        </div>
       </section>
 
       <section class="element" id="book_1_def_9">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-            <line x1="3" y1="3" x2="15" y2="15" />
-            <line x1="3" y1="3" x2="15" y2="3" />
+          <svg>
+            <use href="#rectilineal_plane_angle" />
           </svg>
         </div>
 
         <div class="text">
-        And when the lines containing the angle are straight, the angle is
-        called <strong>rectilineal</strong>.
-      </div>
+          9. And when the lines containing the angle are straight, the angle is
+          called <strong>rectilineal</strong>.
+        </div>
       </section>
 
       <section class="element" id="book_1_def_10">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-            <line x1="3" y1="3" x2="15" y2="15" />
-            <line x1="3" y1="3" x2="15" y2="3" />
+          <svg>
+            <use href="#todo" />
           </svg>
         </div>
 
         <div class="text">
-        When a straight line set up on a straight line makes the adjacent
-        angles equal to one another, each of the equal angles is
-        <strong>right</strong>, and the straight line standing on the other
-        is called a <strong>perpendicular</strong> to that on which it
-        stands.
-      </div>
+          10. When a straight line set up on a straight line makes the adjacent
+          angles equal to one another, each of the equal angles is
+          <strong>right</strong>, and the straight line standing on the other
+          is called a <strong>perpendicular</strong> to that on which it
+          stands.
+        </div>
       </section>
 
       <section class="element" id="book_1_def_11">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-            <line x1="3" y1="3" x2="15" y2="15" />
-            <line x1="3" y1="3" x2="15" y2="3" />
+          <svg>
+            <use href="#todo" />
           </svg>
         </div>
 
         <div class="text">
-        An <strong>obtuse</strong> angle is an angle greater than a right
-        angle.
-      </div>
-        
+          11. An <strong>obtuse</strong> angle is an angle greater than a right
+          angle.
+        </div>
+
       </section>
 
       <section class="element" id="book_1_def_12">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-            <line x1="3" y1="3" x2="15" y2="15" />
-            <line x1="3" y1="3" x2="15" y2="3" />
+          <svg>
+            <use href="#todo" />
           </svg>
         </div>
 
         <div class="text">
-        An acute angle is an angle less than a right angle.
-      </div>
+          12. An acute angle is an angle less than a right angle.
+        </div>
       </section>
 
       <section class="element" id="book_1_def_13">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-            <line x1="3" y1="3" x2="15" y2="15" />
-            <line x1="3" y1="3" x2="15" y2="3" />
+          <svg>
+            <use href="#todo" />
           </svg>
         </div>
 
         <div class="text">
-        A <strong>boundary</strong> is that which is an extremity of
-        anything.
-      </div>
+          13. A <strong>boundary</strong> is that which is an extremity of
+          anything.
+        </div>
       </section>
 
       <section class="element" id="book_1_def_14">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-            <line x1="3" y1="3" x2="15" y2="15" />
-            <line x1="3" y1="3" x2="15" y2="3" />
+          <svg>
+            <use href="#todo" />
           </svg>
         </div>
 
         <div class="text">
-        A <strong>figure</strong> is that which is contained by any boundary
-        or boundaries.
-      </div>
+          14. A <strong>figure</strong> is that which is contained by any boundary
+          or boundaries.
+        </div>
       </section>
       <section class="element" id="book_1_def_15">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-            <line x1="3" y1="3" x2="15" y2="15" />
-            <line x1="3" y1="3" x2="15" y2="3" />
+          <svg>
+            <use href="#todo" />
           </svg>
         </div>
 
         <div class="text">
-        A <strong>circle</strong> is a plane figure contained by one line
-        such that all the straight lines falling upon it from one point
-        among those lying within the figure are equal to one another;
-      </div>
+          15. A <strong>circle</strong> is a plane figure contained by one line
+          such that all the straight lines falling upon it from one point
+          among those lying within the figure are equal to one another;
+        </div>
       </section>
       <section class="element" id="book_1_def_16">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-            <line x1="3" y1="3" x2="15" y2="15" />
-            <line x1="3" y1="3" x2="15" y2="3" />
+          <svg>
+            <use href="#todo" />
           </svg>
         </div>
 
         <div class="text">
-        And the point is called the <strong>centre</strong> of the circle.
-      </div>
+          16. And the point is called the <strong>centre</strong> of the circle.
+        </div>
       </section>
       <section class="element" id="book_1_def_17">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-            <line x1="3" y1="3" x2="15" y2="15" />
-            <line x1="3" y1="3" x2="15" y2="3" />
+          <svg>
+            <use href="#todo" />
           </svg>
         </div>
 
         <div class="text">
-        A <strong>diameter</strong> of the circle is any straight line drawn
-        through the centre and terminated in both directions by the
-        circumference of the circle, and such a straight line also bisects
-        the circle.
-      </div>
+          17. A <strong>diameter</strong> of the circle is any straight line drawn
+          through the centre and terminated in both directions by the
+          circumference of the circle, and such a straight line also bisects
+          the circle.
+        </div>
       </section>
       <section class="element" id="book_1_def_18">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-            <line x1="3" y1="3" x2="15" y2="15" />
-            <line x1="3" y1="3" x2="15" y2="3" />
+          <svg>
+            <use href="#todo" />
           </svg>
         </div>
 
         <div class="text">
-        A <strong>semicircle</strong> is the figure contained by the
-        diameter and the circumference cut off by it. And the centre of the
-        semicircle is the same as that of the circle.
-      </div>
+          18. A <strong>semicircle</strong> is the figure contained by the
+          diameter and the circumference cut off by it. And the centre of the
+          semicircle is the same as that of the circle.
+        </div>
       </section>
       <section class="element" id="book_1_def_19">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-            <line x1="3" y1="3" x2="15" y2="15" />
-            <line x1="3" y1="3" x2="15" y2="3" />
+          <svg>
+            <use href="#todo" />
           </svg>
         </div>
 
         <div class="text">
-        <strong>Rectilineal figures</strong> are those which are contained
-        by straight lines, <strong>trilateral</strong> figures being those
-        contained by three, <strong>quadrilateral</strong> those contained
-        by four, and <strong>multilateral</strong> those contained by more
-        than four straight lines.
-      </div>
+          19. <strong>Rectilineal figures</strong> are those which are contained
+          by straight lines, <strong>trilateral</strong> figures being those
+          contained by three, <strong>quadrilateral</strong> those contained
+          by four, and <strong>multilateral</strong> those contained by more
+          than four straight lines.
+        </div>
       </section>
       <section class="element" id="book_1_def_20">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-            <line x1="3" y1="3" x2="15" y2="15" />
-            <line x1="3" y1="3" x2="15" y2="3" />
+          <svg>
+            <use href="#todo" />
           </svg>
         </div>
 
         <div class="text">
-        Of trilateral figures, an <strong>equilateral triangle</strong> is
-        that which has its three sides equal, an
-        <strong>isosceles triangle</strong> that which has two of its sides
-        alone equal, and an <strong>acute-angled triangle</strong> that
-        which has its three angles acute.
-      </div>
+          20. Of trilateral figures, an <strong>equilateral triangle</strong> is
+          that which has its three sides equal, an
+          <strong>isosceles triangle</strong> that which has two of its sides
+          alone equal, and an <strong>acute-angled triangle</strong> that
+          which has its three angles acute.
+        </div>
       </section>
       <section class="element" id="book_1_def_21">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-            <line x1="3" y1="3" x2="15" y2="15" />
-            <line x1="3" y1="3" x2="15" y2="3" />
+          <svg>
+            <use href="#todo" />
           </svg>
         </div>
 
         <div class="text">
-        Of quadrilateral figures, a <strong>square</strong> is that which is
-        both equilateral and right-angled; an <strong>oblong</strong> that
-        which is right-angled but not equilateral; a
-        <strong>rhombus</strong> that which is equilateral but not
-        right-angled; and a <strong>rhomboid</strong> that which has its
-        opposite sides and angles equal to one another but is neither
-        equalateral nor right-angled. And let quadrilaterals other than
-        these be called <strong>trapezia</strong>.
-      </div>
+          21. Of quadrilateral figures, a <strong>square</strong> is that which is
+          both equilateral and right-angled; an <strong>oblong</strong> that
+          which is right-angled but not equilateral; a
+          <strong>rhombus</strong> that which is equilateral but not
+          right-angled; and a <strong>rhomboid</strong> that which has its
+          opposite sides and angles equal to one another but is neither
+          equalateral nor right-angled. And let quadrilaterals other than
+          these be called <strong>trapezia</strong>.
+        </div>
       </section>
       <section class="element" id="book_1_def_22">
         <div class="diagram">
-          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-            <line x1="3" y1="3" x2="15" y2="15" />
-            <line x1="3" y1="3" x2="15" y2="3" />
+          <svg>
+            <use href="#todo" />
           </svg>
         </div>
 
         <div class="text">
-        <strong>Parallel</strong> straight lines are straight lines which,
-        being in the same plane and being produced indefinitely in both
-        directions, do not meet one another in either direction.
-      </div>
+          22. <strong>Parallel</strong> straight lines are straight lines which,
+          being in the same plane and being produced indefinitely in both
+          directions, do not meet one another in either direction.
+        </div>
       </section>
 
     </section>
@@ -332,135 +323,125 @@
 
       <p>Let the following be postulated:</p>
 
-        <section class="element" id="book_1_post_1">
-          <div class="diagram">
-            <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-              <line x1="3" y1="3" x2="15" y2="15" />
-              <line x1="3" y1="3" x2="15" y2="3" />
-            </svg>
-          </div>
+      <section class="element" id="book_1_post_1">
+        <div class="diagram">
+          <svg>
+            <use href="#todo" />
+          </svg>
+        </div>
 
-          <div class="text">
+        <div class="text">
           To draw a straight line from any point to any point.
         </div>
-        </section>
+      </section>
 
-        <section class="element" id="book_1_post_2">
-          <div class="diagram">
-            <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-              <line x1="3" y1="3" x2="15" y2="15" />
-              <line x1="3" y1="3" x2="15" y2="3" />
-            </svg>
-          </div>
+      <section class="element" id="book_1_post_2">
+        <div class="diagram">
+          <svg>
+            <use href="#todo" />
+          </svg>
+        </div>
 
-          <div class="text">
+        <div class="text">
           To produce a finite straight line continuously in a straight line.
         </div>
       </section>
-        <section class="element" id="book_1_post_3">
-          <div class="diagram">
-            <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-              <line x1="3" y1="3" x2="15" y2="15" />
-              <line x1="3" y1="3" x2="15" y2="3" />
-            </svg>
-          </div>
-  
-          <div class="text">
+      <section class="element" id="book_1_post_3">
+        <div class="diagram">
+          <svg>
+            <use href="#todo" />
+          </svg>
+        </div>
+
+        <div class="text">
           To describe a circle with any centre or distance.
         </div>
-        </section>
-        <section class="element" id="book_1_post_4">
-          <div class="diagram">
-            <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-              <line x1="3" y1="3" x2="15" y2="15" />
-              <line x1="3" y1="3" x2="15" y2="3" />
-            </svg>
-          </div>
-  
-          <div class="text">
+      </section>
+      <section class="element" id="book_1_post_4">
+        <div class="diagram">
+          <svg>
+            <use href="#todo" />
+          </svg>
+        </div>
+
+        <div class="text">
           That all right angles are equal to one another.
         </div>
-        </section>
-        <section class="element" id="book_1_post_5">
-          <div class="diagram">
-            <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-              <line x1="3" y1="3" x2="15" y2="15" />
-              <line x1="3" y1="3" x2="15" y2="3" />
-            </svg>
-          </div>
+      </section>
+      <section class="element" id="book_1_post_5">
+        <div class="diagram">
+          <svg>
+            <use href="#todo" />
+          </svg>
+        </div>
 
-          <div class="text">
+        <div class="text">
           That, if a straight line falling on two straight lines make the
           interior angles on the same side less than two right angles, the two
           straight lines, if produced indefinitely, meet on that side on which
           are the angles less than two right angles.
         </div>
-        </section>
+      </section>
     </section>
 
     <section>
       <h3 id="book_1_common_notions">Common Notions</h3>
 
-        <section class="element" id="book_1_c_n_1">
-          <div class="diagram">
-            <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-              <line x1="3" y1="3" x2="15" y2="15" />
-              <line x1="3" y1="3" x2="15" y2="3" />
-            </svg>
-          </div>
+      <section class="element" id="book_1_c_n_1">
+        <div class="diagram">
+          <svg>
+            <use href="#todo" />
+          </svg>
+        </div>
 
-          <div class="text">
+        <div class="text">
           Things which are equal to the same thing are also equal to one
           another.
         </div>
-        </section>
-        <section class="element" id="book_1_c_n_2">
-          <div class="diagram">
-            <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-              <line x1="3" y1="3" x2="15" y2="15" />
-              <line x1="3" y1="3" x2="15" y2="3" />
-            </svg>
-          </div>
-          
-          <div class="text">
+      </section>
+      <section class="element" id="book_1_c_n_2">
+        <div class="diagram">
+          <svg>
+            <use href="#todo" />
+          </svg>
+        </div>
+
+        <div class="text">
           If equals be added to equals, the wholes are equal.
         </div>
-        </section>
-        <section class="element" id="book_1_c_n_3">
-          <div class="diagram">
-            <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-              <line x1="3" y1="3" x2="15" y2="15" />
-              <line x1="3" y1="3" x2="15" y2="3" />
-            </svg>
-          </div>
+      </section>
+      <section class="element" id="book_1_c_n_3">
+        <div class="diagram">
+          <svg>
+            <use href="#todo" />
+          </svg>
+        </div>
 
-          <div class="text">
+        <div class="text">
           If equals be subtracted from equals, the remainders are equal.
         </div>
-        </section>
-        <section class="element" id="book_1_c_n_4">
-          <div class="diagram">
-            <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-              <line x1="3" y1="3" x2="15" y2="15" />
-              <line x1="3" y1="3" x2="15" y2="3" />
-            </svg>
-          </div>
+      </section>
+      <section class="element" id="book_1_c_n_4">
+        <div class="diagram">
+          <svg>
+            <use href="#todo" />
+          </svg>
+        </div>
 
-          <div class="text">
+        <div class="text">
           Things which coincide with one another are equal to one another.
         </div>
-        </section>
-        <section class="element" id="book_1_c_n_5">
-          <div class="diagram">
-            <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-              <line x1="3" y1="3" x2="15" y2="15" />
-              <line x1="3" y1="3" x2="15" y2="3" />
-            </svg>
-          </div>
-          <div class="text">
+      </section>
+      <section class="element" id="book_1_c_n_5">
+        <div class="diagram">
+          <svg>
+            <use href="#todo" />
+          </svg>
+        </div>
+        <div class="text">
           The whole is greater than the part.
         </div>
-        </section>
+      </section>
     </section>
 
     <section>
@@ -532,4 +513,5 @@
   </main>
   <script type="module" src="/src/main.ts"></script>
 </body>
+
 </html>
