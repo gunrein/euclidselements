@@ -20,6 +20,6 @@ To develop the website with automatic refresh when files change, execute `npm ru
 
 To build a static version of the website, execute `npm run build`.
 
-To preview the site, execute `npm run preview`.
+To preview the site, execute `npm run preview`. Run `npm run build` before running preview.
 
 To clean up built artifacts, execute `npm run clean`.
