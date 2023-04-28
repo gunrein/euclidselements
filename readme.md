@@ -1,6 +1,6 @@
 # Euclid's _Elements_
 
-There are [many great editions of Euclid's _Elements_](index.html#editions).
+There are [many editions of Euclid's _Elements_](index.html#editions).
 
 This edition of _Elements_ is built using HTML, CSS, and Typescript.
 
