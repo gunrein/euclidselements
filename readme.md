@@ -1,27 +1,25 @@
-# Interactive Euclid's Elements
+# Euclid's _Elements_
 
-## Interactive Elements
+There are [many great editions of Euclid's _Elements_](index.html#editions).
 
-The interactive Elements are built using vanilla HTML, CSS, and Typescript.
+This edition of _Elements_ is built using HTML, CSS, and Typescript.
 
-### Build tools
+The central content is in [index.html](index.html) with the format and semantics described in the [appendix about structure and semantics](index.html#structure_semantics).
+The HTML in [index.html](index.html) is intentionally unstyled and provides no CSS- or Javascript-based functionality.
+Other files can use this file as source code for the contents of <cite>Elements</cite> to create beautiful and interactive experiences. It is hoped that other authors can build new editions using the data in this file.
+
+The website is built with no runtime dependencies other than a recent standards-compliant web browser. Development dependencies are minimized as much as possible while having some static analysis tooling for quality and developer ergonomic tooling for more comfort.
+
+The code and publishing approach are intended to make it easy to view and understand the source code as well as to contribute.
+
+## Build tools
 
 [Vite](https://vitejs.dev/) is used for building the site. See `package.json` for details on the tools used.
 
-## Documentation and main website
+To develop the website with automatic refresh when files change, execute `npm run dev`.
 
-Documentation and the main website are built with mkdocs. For full documentation about mkdocs visit [mkdocs.org](https://www.mkdocs.org).
+To build a static version of the website, execute `npm run build`.
 
-### Commands
+To preview the site, execute `npm run preview`.
 
-- `mkdocs new [dir-name]` - Create a new project.
-- `mkdocs serve` - Start the live-reloading docs server.
-- `mkdocs build` - Build the documentation site.
-- `mkdocs -h` - Print help message and exit.
-
-### Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+To clean up built artifacts, execute `npm run clean`.

@@ -2,516 +2,481 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interactive Euclid's Elements</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An HTML encoding of Euclid's Elements">
+  <meta name="keywords" content="euclid,elements,geometry,logic">
+  <meta name="author" content="Euclid, Sir Thomas L. Heath, Greg Unrein">
+  <title>Euclid's Elements</title>
 </head>
 
 <body>
-  <main>
-    <h1 id="volume_title">Euclid's <i>Elements</i></h1>
-    <h2 id="book_1_title">Book I</h2>
-    <section>
-      <!-- Group the definitions of the diagram elements into one section. -->
-      <svg version="1.1" style="display: none;" width="0" height="0" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <g id="todo">
-            <text y="100%" style="font-size: 8px;">To Do</text>
-          </g>
-          <g id="point">
-            <circle r="5px" />
-          </g>
-          <g id="line">
-            <line x2="100%" y2="100%" />
-          </g>
-          <g id="surface">
-            <rect width="100%" height="100%" />
-          </g>
-          <g id="rectilineal_plane_angle">
-            <line x1="10%" y1="90%" x2="100%" y2="90%" />
-            <line x1="10%" y1="90%" x2="100%" y2="10%" />
-          </g>
-        </defs>
-      </svg>
+  <main id="volume">
+    <h1>Euclid's <cite>Elements</cite></h1>
 
+    <article class="book" id="book_1">
+      <h2>Book I</h2>
 
-      <h3 id="book_1_definitions">Definitions</h3>
+      <article class="section" id="book_1_definitions">
+        <h3>Definitions</h3>
 
-      <section class="element" id="book_1_def_1">
-        <div class="diagram">
-          <svg>
-            <use href="#point" x="50%" y="50%" />
-          </svg>
-        </div>
+        <article class="definition" id="book_1_def_1">
+          1. A <dfn title="point" id="point">point</dfn> is that which has no part.
+        </article>
 
-        <div class="text">
-          1. A <strong>point</strong> is that which has no part.
-        </div>
-      </section>
+        <article class="definition" id="book_1_def_2">
+          2. A <dfn title="line" id="line">line</dfn> is a breadthless length.
+        </article>
 
-      <section class="element" id="book_1_def_2">
-        <div class="diagram">
-          <svg>
-            <use href="#line" />
-          </svg>
-        </div>
+        <article class="definition" id="book_1_def_3">
+          3. The extremeties of a <a href="#line">line</a> are <a href="#point">points</a>.
+        </article>
 
-        <div class="text">
-          2. A <strong>line</strong> is a breadthless length.
-        </div>
-      </section>
+        <article class="definition" id="book_1_def_4">
+          4. A <dfn title="straight line" id="straight_line">straight line</dfn> is a <a href="#line">line</a> which
+          lies evenly with
+          the <a href="#point">points</a> on itself.
+        </article>
 
-      <section class="element" id="book_1_def_3">
-        <div class="diagram">
-          <!-- intentionally empty -->
-        </div>
-        <div class="text">
-          3. The extremeties of a line are points.
-        </div>
-      </section>
+        <article class="definition" id="book_1_def_5">
+          5. A <dfn title="surface" id="surface">surface</dfn> is that which has length and breadth only.
+        </article>
 
-      <section class="element" id="book_1_def_4">
-        <div class="diagram">
-          <!-- intentionally empty -->
-        </div>
+        <article class="definition" id="book_1_def_6">
+          6. The extremeties of a <a href="#surface">surface</a> are <a href="#line">lines</a>.
+        </article>
 
-        <div class="text">
-          4. A <strong>straight line</strong> is a line which lies evenly with
-          the points on itself.
-        </div>
-      </section>
+        <article class="definition" id="book_1_def_7">
+          7. A <dfn title="plane surface" id="plane_surface">plane surface</dfn> is a <a href="#surface">surface</a>
+          which lies evenly with
+          the <a href="#straight_lines">straight lines</a> on itself.
+        </article>
 
-      <section class="element" id="book_1_def_5">
-        <div class="diagram">
-          <svg>
-            <use href="#surface" />
-          </svg>
-        </div>
+        <article class="definition" id="book_1_def_8">
+          8. A <dfn title="plane angle" id="plane_angle">plane angle</dfn> is the inclination to one another of
+          two <a href="#line">lines</a> in a <a href="#plane_surface">plane</a> which meet one another and do not lie in
+          a
+          <a href="#straight_line">straight line</a>.
+        </article>
 
-        <div class="text">
-          5. A <strong>surface</strong> is that which has length and breadth only.
-        </div>
-      </section>
+        <article class="definition" id="book_1_def_9">
+          9. And when the <a href="#line">lines</a> containing the <a href="#plane_angle">angle</a> are straight, the
+          angle is
+          called <dfn title="rectilineal angle" id="rectilineal_angle">rectilineal</dfn>.
+        </article>
 
-      <section class="element" id="book_1_def_6">
-        <div class="diagram">
-          <!-- intentionally empty -->
-        </div>
-
-        <div class="text">6. The extremeties of a surface are lines.</div>
-      </section>
-
-      <section class="element" id="book_1_def_7">
-        <div class="diagram">
-          <!-- intentionally empty -->          
-        </div>
-        <div class="text">
-          7. A <strong>plane surface</strong> is a surface which lies evenly with
-          the straight lines on itself.
-        </div>
-      </section>
-
-      <section class="element" id="book_1_def_8">
-        <div class="diagram">
-          <!-- intentionally empty -->
-        </div>
-
-        <div class="text">
-          8. A <strong>plane angle</strong> is the inclination to one another of
-          two lines in a plane which meet one another and do not lie in a
-          straight line.
-        </div>
-      </section>
-
-      <section class="element" id="book_1_def_9">
-        <div class="diagram">
-          <svg>
-            <use href="#rectilineal_plane_angle" />
-          </svg>
-        </div>
-
-        <div class="text">
-          9. And when the lines containing the angle are straight, the angle is
-          called <strong>rectilineal</strong>.
-        </div>
-      </section>
-
-      <section class="element" id="book_1_def_10">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
-
-        <div class="text">
-          10. When a straight line set up on a straight line makes the adjacent
-          angles equal to one another, each of the equal angles is
-          <strong>right</strong>, and the straight line standing on the other
-          is called a <strong>perpendicular</strong> to that on which it
+        <article class="definition" id="book_1_def_10">
+          10. When a <a href="#straight_line">straight line</a> set up on a <a href="#straight_line">straight line</a> makes the adjacent
+          <a href="#plane_angle">angles</a> equal to one another, each of the equal angles is
+          <dfn title="right angle" id="right_angle">right</dfn>, and the <a href="#straight_line">straight line</a> standing on the other
+          is called a <dfn title="perpendicular line" id="perpendicular_line">perpendicular</dfn> to that on which it
           stands.
-        </div>
-      </section>
+        </article>
 
-      <section class="element" id="book_1_def_11">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
+        <article class="definition" id="book_1_def_11">
+          11. An <dfn title="obtuse angle" id="obtuse_angle">obtuse angle</dfn> is an <a href="#plane_angle">angle</a>
+          greater than a <a href="#right_angle">right
+            angle</a>.
+        </article>
 
-        <div class="text">
-          11. An <strong>obtuse</strong> angle is an angle greater than a right
-          angle.
-        </div>
+        <article class="definition" id="book_1_def_12">
+          12. An <dfn title="acute angle" id="acute_angle">acute angle</dfn> is an <a href="#plane_angle">angle</a> less
+          than a <a href="#right_angle">right angle</a>.
+        </article>
 
-      </section>
-
-      <section class="element" id="book_1_def_12">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
-
-        <div class="text">
-          12. An acute angle is an angle less than a right angle.
-        </div>
-      </section>
-
-      <section class="element" id="book_1_def_13">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
-
-        <div class="text">
-          13. A <strong>boundary</strong> is that which is an extremity of
+        <article class="definition" id="book_1_def_13">
+          13. A <dfn title="boundary" id="boundary">boundary</dfn> is that which is an extremity of
           anything.
-        </div>
-      </section>
+        </article>
 
-      <section class="element" id="book_1_def_14">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
+        <article class="definition" id="book_1_def_14">
+          14. A <dfn title="figure" id="figure">figure</dfn> is that which is contained by any <a
+            href="#boundary">boundary
+            or boundaries</a>.
+        </article>
 
-        <div class="text">
-          14. A <strong>figure</strong> is that which is contained by any boundary
-          or boundaries.
-        </div>
-      </section>
-      <section class="element" id="book_1_def_15">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
+        <article class="definition" id="book_1_def_15">
+          15. A <dfn title="circle" id="circle">circle</dfn> is a plane <a href="#figure">figure</a> contained by one <a
+            href="#line">line</a>
+          such that all the <a href="#straight_line">straight lines</a> falling upon it from one <a
+            href="#point">point</a>
+          among those lying within the <a href="#figure">figure</a> are equal to one another;
+        </article>
 
-        <div class="text">
-          15. A <strong>circle</strong> is a plane figure contained by one line
-          such that all the straight lines falling upon it from one point
-          among those lying within the figure are equal to one another;
-        </div>
-      </section>
-      <section class="element" id="book_1_def_16">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
+        <article class="definition" id="book_1_def_16">
+          16. And the <a href="#point">point</a> is called the <dfn title="center" id="center">center</dfn> of the <a
+            href="#circle">circle</a>.
+        </article>
 
-        <div class="text">
-          16. And the point is called the <strong>centre</strong> of the circle.
-        </div>
-      </section>
-      <section class="element" id="book_1_def_17">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
+        <article class="definition" id="book_1_def_17">
+          17. A <dfn title="diameter" id="diameter">diameter</dfn> of the <a href="#circle">circle</a> is any <a
+            href="#straight_line">straight line</a> drawn
+          through the <a href="#center">center</a> and terminated in both directions by the
+          circumference of the <a href="#circle">circle</a>, and such a <a href="#straight_line">straight line</a> also
+          bisects
+          the <a href="#circle">circle</a>.
+        </article>
 
-        <div class="text">
-          17. A <strong>diameter</strong> of the circle is any straight line drawn
-          through the centre and terminated in both directions by the
-          circumference of the circle, and such a straight line also bisects
-          the circle.
-        </div>
-      </section>
-      <section class="element" id="book_1_def_18">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
+        <article class="definition" id="book_1_def_18">
+          18. A <dfn title="semicircle" id="semicircle">semicircle</dfn> is the figure contained by the
+          <a href="#diameter">diameter</a> and the circumference cut off by it. And the <a href="#center">center</a> of
+          the
+          semicircle is the same as that of the <a href="#circle">circle</a>.
+        </article>
 
-        <div class="text">
-          18. A <strong>semicircle</strong> is the figure contained by the
-          diameter and the circumference cut off by it. And the centre of the
-          semicircle is the same as that of the circle.
-        </div>
-      </section>
-      <section class="element" id="book_1_def_19">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
+        <article class="definition" id="book_1_def_19">
+          19. <dfn title="rectilineal figure" id="rectilineal_figure">Rectilineal figures</dfn> are those which are
+          contained
+          by <a href="#straight_line">straight lines</a>, <dfn title="trilateral figure"
+            id="trilateral_figure">trilateral</dfn> figures being those
+          contained by three, <dfn title="quadrilateral figure" id="quadrilateral_figure">quadrilateral</dfn> those
+          contained
+          by four, and <dfn title="multilateral figure" id="multilateral_figure">multilateral</dfn> those contained by
+          more
+          than four <a href="#straight_line">straight lines</a>.
+        </article>
 
-        <div class="text">
-          19. <strong>Rectilineal figures</strong> are those which are contained
-          by straight lines, <strong>trilateral</strong> figures being those
-          contained by three, <strong>quadrilateral</strong> those contained
-          by four, and <strong>multilateral</strong> those contained by more
-          than four straight lines.
-        </div>
-      </section>
-      <section class="element" id="book_1_def_20">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
-
-        <div class="text">
-          20. Of trilateral figures, an <strong>equilateral triangle</strong> is
+        <article class="definition" id="book_1_def_20">
+          20. Of <a href="#trilateral_figure">trilateral figures</a>, an <dfn title="equilateral triangle"
+            id="equilateral_triangle">equilateral triangle</dfn> is
           that which has its three sides equal, an
-          <strong>isosceles triangle</strong> that which has two of its sides
-          alone equal, and an <strong>acute-angled triangle</strong> that
-          which has its three angles acute.
-        </div>
-      </section>
-      <section class="element" id="book_1_def_21">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
+          <dfn title="isosceles triangle" id="isosceles_triangle">isosceles triangle</dfn> that which has two of its
+          sides
+          alone equal, and an <dfn title="acute triangle" id="acute_triangle">acute-angled triangle</dfn> that
+          which has its three <a href="#acute_angle">angles acute</a>.
+        </article>
 
-        <div class="text">
-          21. Of quadrilateral figures, a <strong>square</strong> is that which is
-          both equilateral and right-angled; an <strong>oblong</strong> that
-          which is right-angled but not equilateral; a
-          <strong>rhombus</strong> that which is equilateral but not
-          right-angled; and a <strong>rhomboid</strong> that which has its
-          opposite sides and angles equal to one another but is neither
-          equalateral nor right-angled. And let quadrilaterals other than
-          these be called <strong>trapezia</strong>.
-        </div>
-      </section>
-      <section class="element" id="book_1_def_22">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
+        <article class="definition" id="book_1_def_21">
+          21. Of <a href="#quadrilateral_figure">quadrilateral figures</a>, a <dfn title="square"
+            id="square">square</dfn> is that which is
+          both equilateral and <a href="#right_angle">right-angled</a>; an <dfn title="oblong quadrilateral"
+            id="oblong_quadrilateral">oblong</dfn> that
+          which is <a href="#right_angle">right-angled</a> but not equilateral; a
+          <dfn title="rhombus" id="rhombus">rhombus</dfn> that which is equilateral but not
+          <a href="#right_angle">right-angled</a>; and a <dfn title="rhomboid" id="rhomboid">rhomboid</dfn> that which
+          has its
+          opposite sides and <a href="#plane_angle">angles</a> equal to one another but is neither
+          equalateral nor <a href="#right_angle">right-angled</a>. And let quadrilaterals other than
+          these be called <dfn title="trapezia" id="trapezia">trapezia</dfn>.
+        </article>
 
-        <div class="text">
-          22. <strong>Parallel</strong> straight lines are straight lines which,
-          being in the same plane and being produced indefinitely in both
+        <article class="definition" id="book_1_def_22">
+          22. <dfn title="parallel lines" id="parallel_lines">Parallel</dfn> <a href="#straight_line">straight lines are
+            straight lines</a> which,
+          being in the same <a href="#plane_surface">plane</a> and being produced indefinitely in both
           directions, do not meet one another in either direction.
-        </div>
-      </section>
+        </article>
+      </article>
 
-    </section>
+      <article class="section" id="book_1_postulates">
+        <h3>Postulates</h3>
 
-    <section>
-      <h3 id="book_1_postulates">Postulates</h3>
+        <p>Let the following be postulated:</p>
 
-      <p>Let the following be postulated:</p>
+        <article class="postulate" id="book_1_post_1">
+          1. To draw a <a href="#straight_line">straight line</a> from any <a href="#point">point</a> to any <a
+            href="#point">point</a>.
+        </article>
 
-      <section class="element" id="book_1_post_1">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
+        <article class="postulate" id="book_1_post_2">
+          2. To produce a finite <a href="#straight_line">straight line</a> continuously in a <a
+            href="#straight_line">straight line</a>.
+        </article>
 
-        <div class="text">
-          To draw a straight line from any point to any point.
-        </div>
-      </section>
+        <article class="postulate" id="book_1_post_3">
+          3. To describe a <a href="#circle">circle</a> with any <a href="#center">center</a> or distance.
+        </article>
 
-      <section class="element" id="book_1_post_2">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
+        <article class="postulate" id="book_1_post_4">
+          4. That all <a href="#right_angle">right angles</a> are equal to one another.
+        </article>
 
-        <div class="text">
-          To produce a finite straight line continuously in a straight line.
-        </div>
-      </section>
-      <section class="element" id="book_1_post_3">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
+        <article class="postulate" id="book_1_post_5">
+          5. That, if a <a href="#straight_line">straight line</a> falling on two <a href="#straight_line">straight
+            lines</a> make the
+          interior <a href="#plane_angle">angles</a> on the same side less than two <a href="#right_angle">right angles</a>, the two
+          <a href="#straight_line">straight lines</a>, if produced indefinitely, meet on that side on which
+          are the angles less than two <a href="#right_angle">right angles</a>.
+        </article>
+      </article>
 
-        <div class="text">
-          To describe a circle with any centre or distance.
-        </div>
-      </section>
-      <section class="element" id="book_1_post_4">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
+      <article class="section" id="book_1_common_notions">
+        <h3>Common Notions</h3>
 
-        <div class="text">
-          That all right angles are equal to one another.
-        </div>
-      </section>
-      <section class="element" id="book_1_post_5">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
-
-        <div class="text">
-          That, if a straight line falling on two straight lines make the
-          interior angles on the same side less than two right angles, the two
-          straight lines, if produced indefinitely, meet on that side on which
-          are the angles less than two right angles.
-        </div>
-      </section>
-    </section>
-
-    <section>
-      <h3 id="book_1_common_notions">Common Notions</h3>
-
-      <section class="element" id="book_1_c_n_1">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
-
-        <div class="text">
-          Things which are equal to the same thing are also equal to one
+        <article class="common-notion" id="book_1_c_n_1">
+          1. Things which are equal to the same thing are also equal to one
           another.
-        </div>
-      </section>
-      <section class="element" id="book_1_c_n_2">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
+        </article>
 
-        <div class="text">
-          If equals be added to equals, the wholes are equal.
-        </div>
-      </section>
-      <section class="element" id="book_1_c_n_3">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
+        <article class="common-notion" id="book_1_c_n_2">
+          2. If equals be added to equals, the wholes are equal.
+        </article>
 
-        <div class="text">
-          If equals be subtracted from equals, the remainders are equal.
-        </div>
-      </section>
-      <section class="element" id="book_1_c_n_4">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
+        <article class="common-notion" id="book_1_c_n_3">
+          3. If equals be subtracted from equals, the remainders are equal.
+        </article>
 
-        <div class="text">
-          Things which coincide with one another are equal to one another.
-        </div>
-      </section>
-      <section class="element" id="book_1_c_n_5">
-        <div class="diagram">
-          <svg>
-            <use href="#todo" />
-          </svg>
-        </div>
-        <div class="text">
-          The whole is greater than the part.
-        </div>
-      </section>
-    </section>
+        <article class="common-notion" id="book_1_c_n_4">
+          4. Things which coincide with one another are equal to one another.
+        </article>
 
-    <section>
-      <h3 id="book_1_propositions">Propositions</h3>
+        <article class="common-notion" id="book_1_c_n_5">
+          5. The whole is greater than the part.
+        </article>
+      </article>
 
-      <section>
-        <h4 id="book_1_1">Proposition I.</h4>
+      <article class="section" id="book_1_propositions">
+        <h3>Propositions</h3>
 
-        <p>
-          <i>On a given finite straight line to construct an equilateral
-            triangle.</i>
-        </p>
+        <article class="proposition" id="book_1_prop_1">
+          <h4>Proposition I.</h4>
 
-        <p>Let <i>AB</i> be the given finite straight line.</p>
+          <p class="proposition">
+            On a given finite <a href="#straight_line">straight line</a> to construct an <a
+              href="#equilateral_triangle">equilateral
+              triangle</a>.
+          </p>
 
-        <p>
-          Thus it is required to construct an equalateral triangle on the
-          straight line <i>AB</i>.
-        </p>
+          <p class="step">Let <dfn id="book_1_prop_1_line_ab">AB</dfn> be the given finite <a
+              href="#straight_line">straight line</a>.</p>
 
-        <p>
-          With centre <i>A</i> and distance <i>AB</i> let the circle
-          <i>BCD</i> be described; <a href="#book_1_post_3">Post. 3</a>
-        </p>
+          <p class="step">
+            Thus it is required to construct an <a href="#equilateral_triangle">equalateral triangle</a> on the
+            <a href="#straight_line">straight line</a> <a href="#book_1_prop_1_ab">AB</a>.
+          </p>
 
-        <p>
-          again, with centre <i>B</i> and distance <i>BA</i> let the circle
-          <i>ACE</i> be described; <a href="#book_1_post_3">Post. 3</a>
-        </p>
+          <p class="step">
+            With <a href="#center">center</a> <dfn id="book_1_prop_1_a">A</dfn> and distance <dfn
+              id="book_1_prop_1_distance_ab">AB</dfn> let the <a href="#circle">circle</a>
+            <dfn id="book_1_prop_1_circle_bcd">BCD</dfn> be described; <cite><a href="#book_1_post_3">Post. 3</a></cite>
+          </p>
 
-        <p>
-          and from the point <i>C</i>, in which the circles cut one another,
-          to the points <i>A</i>, <i>B</i> let the straight lines <i>CA</i>,
-          <i>CB</i> be joined. <a href="#book_1_post_1">Post. 1</a>
-        </p>
+          <p class="step">
+            again, with <a href="#center">center</a> <dfn id="book_1_prop_1_b">B</dfn> and distance <dfn
+              id="book_1_prop_1_distance_ba">BA</dfn> let the <a href="#circle">circle</a>
+            <dfn id="book_1_prop_1_circle_ace">ACE</dfn> be described; <cite><a href="#book_1_post_3">Post. 3</a></cite>
+          </p>
 
-        <p>
-          Now, since the point A is the centre of the circle <i>CDB</i>,
-          <i>AC</i> is equal to <i>AB</i>.
-          <a href="#book_1_def_15">Def. 15</a>
-        </p>
+          <p class="step">
+            and from the <a href="#point">point</a> <dfn id="book_1_prop_1_c">C</dfn>, in which the <a
+              href="#circle">circles</a> cut one another,
+            to the <a href="#point">points</a> <a href="#book_1_prop_1_a">A</a>, <a href="#book_1_prop_1_b">B</a> let
+            the <a href="#straight_line">straight lines</a> <dfn id="book_1_prop_1_line_ca">CA</dfn>,
+            <dfn id="book_1_prop_1_line_cb">CB</dfn> be joined. <cite><a href="#book_1_post_1">Post. 1</a></cite>
+          </p>
 
-        <p>
-          Again, since the point <i>B</i> is the centre of the circle
-          <i>CAE</i>, <i>BC</i> is equal to <i>AB</i>.
-          <a href="#book_1_def_15">Def. 15</a>
-        </p>
+          <p class="step">
+            Now, since the <a href="#book_1_prop_1_a">point A</a> is the <a href="#center">center</a> of the circle <a
+              href="#book_1_prop_1_circle_bcd">CDB</a>,
+            <dfn id="book_1_prop_1_line_ac">AC</dfn> is equal to <a href="#book_1_prop_1_line_ab">AB</a>.
+            <cite><a href="#book_1_def_15">Def. 15</a></cite>
+          </p>
 
-        <p>But <i>CA</i> was also proved equal to <i>AB</i>;</p>
+          <p class="step">
+            Again, since the point <a href="#book_1_prop_1_b">B</a> is the <a href="#center">center</a> of the circle
+            <a href="#book_1_prop_1_circle_ace">CAE</a>, <a href="#book_1_prop_1_line_cb">BC</a> is equal to <a
+              href="#book_1_prop_1_line_ab">AB</a>.
+            <cite><a href="#book_1_def_15">Def. 15</a></cite>
+          </p>
 
-        <p>
-          therefore each of the straight lines <i>CA</i>, <i>CB</i> is equal
-          to <i>AB</i>.
-        </p>
+          <p class="step">But <a href="#book_1_prop_1_line_ac">CA</a> was also proved equal to <a
+              href="#book_1_prop_1_line_ab">AB</a>;</p>
 
-        <p>
-          And things which are equal to the same thing are also equal to one
-          another; <a href="#book_1_c_n_1">C. N. 1</a>
-        </p>
+          <p class="step">
+            therefore each of the straight lines <a href="#book_1_prop_1_line_ac">CA</a>, <a
+              href="#book_1_prop_1_line_cb">CB</a> is equal
+            to <cite><a href="#book_1_prop_1_line_ab">AB</a></cite>.
+          </p>
 
-        <p>therefore <i>CA</i> is also equal to <i>CB</i>.</p>
+          <p class="step">
+            And things which are equal to the same thing are also equal to one
+            another; <cite><a href="#book_1_c_n_1">C. N. 1</a></cite>
+          </p>
 
-        <p>
-          Therefore the three straight lines <i>CA</i>, <i>AB</i>,
-          <i>BC</i> are equal to one another.
-        </p>
-      </section>
-    </section>
+          <p>therefore <a href="#book_1_prop_1_line_ac">CA</a> is also equal to <a href="#book_1_prop_1_line_cb">CB</a>.
+          </p>
+
+          <p>
+            Therefore the three <a href="#straight_line">straight lines</a> <a href="#book_1_prop_1_line_ac">CA</a>, <a
+              href="#book_1_prop_1_line_ab">AB</a>,
+            <a href="#book_1_prop_1_line_cb">BC</a> are equal to one another.
+          </p>
+        </article>
+      </article>
+
+    </article>
   </main>
-  <script type="module" src="/src/main.ts"></script>
+
+  <article id="appendix">
+    <h2>Appendixes</h2>
+
+    <article id="editions">
+      <h3>Editions</h3>
+  
+      <p>
+      There are many editions of <a href="https://en.wikipedia.org/wiki/Euclid%27s_Elements">Euclid's <cite>Elements</cite></a>.
+      This edition utilizes the 1908 translation by Sir Thomas L. Heath for the text.
+      The diagrams and animations are representations of the definitions and postulates similar in spirit to
+      <a href="https://en.wikipedia.org/wiki/Oliver_Byrne_(mathematician)#Byrne.27s_Euclid">Byrne's diagramatic visualizations</a>
+      and <a href="https://mathcs.clarku.edu/~djoyce/java/elements/">Joyce's applet-based approach</a>.
+      This edition takes the novel approach of expressing the <cite>Elements</cite> as semantic HTML (see <a href="#structure_semantics">the structure and semantics appendix</a> for details),
+      then using CSS and Javascript to enrich the visualizations.
+      </p>
+  
+      <ul>
+        <li><a href="https://mathcs.clarku.edu/~djoyce/java/elements/">David E. Joyce's edition on the web</a></li>
+        <li><a href="https://www.greenlion.com/books/EuclidsElements.html">Green Lion Press edition of T. L. Heath's translation of all 13 books</a></li>
+        <li><a href="https://store.doverpublications.com/0486461181.html">Dover edition of T. L. Heath's translation of all 13 books</a></li>
+        <li><a href="https://www.kroneckerwallis.com/product/euclids-elements-completing-oliver-byrnes-work/">KroneckerWallis edition titled <cite>Euclid's Elements of Geometry: completing Byrne's work</cite></a></li>
+        <li><a href="https://www.taschen.com/en/books/classics/47706/oliver-byrne-the-first-six-books-of-the-elements-of-euclid/">Taschen edition titled <cite>Oliver Byrne. The First Six Books of the Elements of Euclid</cite></a></li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Euclid-Elements.pdf">Edition in Greek compiled by Myungsunn Ryu</a></li>
+        <li><a href="https://www.maa.org/press/periodicals/convergence/mathematical-treasure-adelard-s-translation-of-euclid-s-elements">Mathematical Treasure: Adelard's Translation of Euclid's Elements</a></li>
+      </ul>
+  
+      <h4>Some other resources about Euclid and the <cite>Elements</cite></h4>
+      <ul>
+        <li><a href="https://www.maa.org/press/maa-reviews/euclid-the-creation-of-mathematics"><cite>Euclid: The Creation of Mathematics</cite> by Benno Artmann</a></li>
+      </ul>
+    </article>
+  
+    <article id="structure_semantics">
+      <h3>Structure and semantics</h3>
+  
+      <p>
+        This file is intentionally unstyled. It provides no CSS- or Javascript-based functionality.
+        Other programs can use this file as source code for the contents of <cite>Elements</cite> to create beautiful and interactive experiences.
+      </p>
+  
+      <p>
+        This HTML file contains (currently only part of) the textual content of Euclid's <cite>Elements</cite> expressed in HTML both syntatically and semantically.
+      </p>
+  
+      <dl>
+        <dt id="structure_book">Book</dt>
+        <dd>
+          A book from <cite>Elements</cite> is expressed as an <code>&lt;article class=&quot;book&quot;&gt;</code> element and class attribute.
+          A book element contains additional <code>&lt;article&gt;</code> elements for
+          <a href="#structure_section">sections</a>,
+          <a href="#structure_definition">definitions</a>,
+          <a href="#structure_postulates">postulates</a>,
+          <a href="#structure_common_notion">common notions</a>,
+          and <a href="#structure_propositions">propositions</a>.
+          A book element must be contained directly by the <code>&lt;main&gt;</code> element.
+        </dd>
+        <dd>
+          Each book has a unique identifier expressed as an <code>id</code> attribute. The format for the <code>id</code>
+          is <code>book_{book number}</code> where
+          <code>{book number}</code> is the book number from <cite>Elements</cite>.
+          For example, book 1 uses <code>id=&quot;book_1&quot;</code>.
+        </dd>
+  
+        <dt id="structure_section">Section</dt>
+        <dd>
+          A section from <cite>Elements</cite> is expressed as an <code>&lt;article class=&quot;section&quot;&gt;</code> element and class attribute.
+          A section element must be contained directly by an <a href="#structure_book"><code>&lt;article class=&quot;book&quot;&gt;</code></a> element.
+        </dd>
+        <dd>
+          Each section has a unique identifier expressed as an <code>id</code> attribute. The format for the <code>id</code>
+          is <code>book_{book number}_{section type}</code> where
+          <code>{book number}</code> is the book number from <cite>Elements</cite> and
+          <code>{section type}</code> is one of <code>definitions</code>, <code>postulates</code>, <code>common_notions</code>, or <code>propositions</code>.
+          For example, the definitions section in book 1 uses <code>id=&quot;book_1_definitions&quot;</code>.
+        </dd>
+  
+        <dt id="structure_definition">Definition</dt>
+        <dd>
+          A definition from <cite>Elements</cite> is expressed as an <code>&lt;article class=&quot;definition&quot;&gt;</code> element and class attribute.
+          A definition element must be contained directly by an <a href="#structure_section"><code>&lt;article class=&quot;section&quot;&gt;</code></a> element.
+        </dd>
+        <dd>
+          Each definition has a unique identifier expressed as an <code>id</code> attribute. The format for the <code>id</code>
+          is <code>book_{book number}_def_{definition index}</code> where
+          <code>{book number}</code> is the book number from <cite>Elements</cite> and
+          <code>{definition index}</code> is the numbered index of the definition.
+          For example, the second definition in book 1 uses <code>id=&quot;book_1_def_2&quot;</code>.
+        </dd>
+  
+        <dt id="structure_term">Term</dt>
+        <dd>
+          Each <a href="#structure_definition">definition</a> defines one or more terms.
+          These terms are expressed as <code>&lt;dfn&gt;</code> elements with both the <code>title</code> and <code>id</code> attributes included.
+          The values of the <code>title</code> and <code>id</code> are up to the editor, but must both be globally unique in the document.
+        </dd>
+  
+        <dt id="structure_postulate">Postulate</dt>
+        <dd>
+          A postulate from <cite>Elements</cite> is expressed as an <code>&lt;article class=&quot;postulate&quot;&gt;</code> element and class attribute.
+          A postulate element must be contained directly by an <a href="#structure_section"><code>&lt;article class=&quot;section&quot;&gt;</code></a> element.
+        </dd>
+        <dd>
+          Each postulate has a unique identifier expressed as an <code>id</code> attribute. The format for the <code>id</code>
+          is <code>book_{book number}_post_{postulate index}</code> where
+          <code>{book number}</code> is the book number from <cite>Elements</cite> and
+          <code>{postulate index}</code> is the numbered index of the postulate.
+          For example, the third postulate in book 1 uses <code>id=&quot;book_1_post_3&quot;</code>.
+        </dd>
+  
+        <dt id="structure_common_notion">Common Notion</dt>
+        <dd>
+          A common notion from <cite>Elements</cite> is expressed as an <code>&lt;article class=&quot;common-notion&quot;&gt;</code> element and class attribute.
+          A common notion element must be contained directly by an <a href="#structure_section"><code>&lt;article class=&quot;section&quot;&gt;</code></a> element.
+        </dd>
+        <dd>
+          Each common notion has a unique identifier expressed as an <code>id</code> attribute. The format for the <code>id</code>
+          is <code>book_{book number}_c_n_{common notion index}</code> where
+          <code>{book number}</code> is the book number from <cite>Elements</cite> and
+          <code>{common notion index}</code> is the numbered index of the common notion.
+          For example, the first common notion in book 1 uses <code>id=&quot;book_1_c_n_1&quot;</code>.
+        </dd>
+  
+        <dt id="structure_proposition">Proposition</dt>
+        <dd>
+          A proposition from <cite>Elements</cite> is expressed as an <code>&lt;article class=&quot;proposition&quot;&gt;</code> element and class attribute.
+          A proposition element must be contained directly by an <a href="#structure_section"><code>&lt;article class=&quot;section&quot;&gt;</code></a> element.
+        </dd>
+        <dd>
+          Each proposition has a unique identifier expressed as an <code>id</code> attribute. The format for the <code>id</code>
+          is <code>book_{book number}_prop_{proposition index}</code> where
+          <code>{book number}</code> is the book number from <cite>Elements</cite> and
+          <code>{proposition index}</code> is the numbered index of the proposition.
+          For example, the first proposition in book 1 uses <code>id=&quot;book_1_prop_1&quot;</code>.
+        </dd>
+  
+        <dt id="structure_step">Step</dt>
+        <dd>
+          A step in a proposition from <cite>Elements</cite> is expressed as an <code>&lt;p class=&quot;step&quot;&gt;</code> element and class attribute.
+          A step element must be contained directly by an <a href="#structure_proposition"><code>&lt;article class=&quot;proposition&quot;&gt;</code></a> element.
+        </dd>
+  
+        <dt id="structure_object_definition">Object definition</dt>
+        <dd>
+          Each step defines one or more objects. These definitions are expressed as an <code>&lt;defn&gt;</code> element.
+          An object definition element must be contained directly by an <a href="#structure_step"><code>&lt;p class=&quot;step&quot;&gt;</code></a> element.
+        </dd>
+        <dd>Each object has a unique identifier expressed as an <code>id</code> attribute. The format for the <code>id</code>
+          is <code>{proposition id}_{object id}</code> where
+          <code>{proposition id}</code> is the <code>id</code> of the proposition that contains the object and
+          <code>{object id}</code> is up to the editor, but must be unique in the proposition.
+          An example is <code>id=&quot;book_1_prop_1_line_ab&quot;</code> which is the line AB defined in the first proposition of book 1.
+        </dd>
+  
+        <dt id="structure_reference">Reference</dt>
+        <dd>
+          References to specific definitions, terms, postulates, common notes, sections, and books are expressed as <code>&lt;a&gt;</code> elements.
+          The value of the <code>href</code> attribute is the <code>#id</code> of the referenced element.
+          For example, a reference to the definition of the term <i>circle</i> is <code>&lt;a href=&quot;#circle&quot;&gt;some text&lt;/a&gt;</code>.
+          A reference to the first proposition in book 1 is <code>&lt;a href=&quot;#book_1_prop_1&quot;&gt;some text&lt;/a&gt;</code>
+        </dd>
+
+        <dt id="structure_commentary">Commentary</dt>
+        <dd>
+          Commentary is expressed as an <code>&lt;aside class=&quot;comment&quot;&gt;</code> element and class attribute.
+        </dd>
+      </dl>
+    </article>
+  </article>
+
+
 </body>
 
 </html>
